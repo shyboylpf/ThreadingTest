@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadTest10", "ThreadTest1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadTest11", "ThreadTest11\ThreadTest11.csproj", "{8B45595A-ACC7-4C31-9D11-AB47EB378990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest12", "ThreadTest12\ThreadTest12.csproj", "{5C289B7E-B440-4E08-967F-C6F5D1034982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadTest12", "ThreadTest12\ThreadTest12.csproj", "{5C289B7E-B440-4E08-967F-C6F5D1034982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest13", "ThreadTest13\ThreadTest13.csproj", "{0E2FB8E1-51AA-4B73-BD94-6D90F6BAE2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{5C289B7E-B440-4E08-967F-C6F5D1034982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C289B7E-B440-4E08-967F-C6F5D1034982}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C289B7E-B440-4E08-967F-C6F5D1034982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2FB8E1-51AA-4B73-BD94-6D90F6BAE2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2FB8E1-51AA-4B73-BD94-6D90F6BAE2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2FB8E1-51AA-4B73-BD94-6D90F6BAE2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2FB8E1-51AA-4B73-BD94-6D90F6BAE2FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
