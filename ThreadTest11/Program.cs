@@ -16,6 +16,11 @@ namespace ThreadTest11
             Thread worker = new Thread(() => Console.ReadLine());
             if (args.Length > 0) worker.IsBackground = true;
             worker.Start();
+
+            ///When a process terminates in this manner, any finally blocks in the execution stack of background threads are circumvented. This is a problem if your program employs finally (or using) blocks to perform cleanup work such as releasing resources or deleting temporary files. To avoid this, you can explicitly wait out such background threads upon exiting an application. There are two ways to accomplish this:
+            /// If you’ve created the thread yourself, call Join on the thread.
+            /// If you’re on a pooled thread, use an event wait handle.
+            worker.Join();
         }
         ///没有参数的情况下 , worker是一个前台线程, 需要等待worker线程的ReadLine操作
         /// dotnet.exe .\ThreadTest11.dll a
