@@ -27,6 +27,9 @@ namespace ThreadTest18
 
         static void Go(object data)
         {
+            /// 抛出异常只会导致该线程崩溃 , 不会被主线程捕获 . 
+            // throw null;
+
             Console.WriteLine("Hello from the thread pool! " + data);
         }
     }
