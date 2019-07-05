@@ -41,13 +41,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadTest17", "ThreadTest1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadTest18", "ThreadTest18\ThreadTest18.csproj", "{86EDCC25-7278-4EEF-A044-48641E188A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest19", "ThreadTest19\ThreadTest19.csproj", "{F2065D0E-EBCD-41AE-A573-D45DDBF1B691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadTest19", "ThreadTest19\ThreadTest19.csproj", "{F2065D0E-EBCD-41AE-A573-D45DDBF1B691}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest20", "ThreadTest20\ThreadTest20.csproj", "{2872CA66-8ACC-45DB-BDAB-AF514AD20E33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest21", "ThreadTest21\ThreadTest21.csproj", "{D07E69B9-8E57-4CF6-B9A4-FF41F7916E79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest22", "ThreadTest22\ThreadTest22.csproj", "{003E4DA0-2D20-4634-8D60-24CC0615D773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest23", "ThreadTest23\ThreadTest23.csproj", "{81A0F13D-C533-45FD-AB5D-C50EC79C7381}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{003E4DA0-2D20-4634-8D60-24CC0615D773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003E4DA0-2D20-4634-8D60-24CC0615D773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003E4DA0-2D20-4634-8D60-24CC0615D773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A0F13D-C533-45FD-AB5D-C50EC79C7381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A0F13D-C533-45FD-AB5D-C50EC79C7381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A0F13D-C533-45FD-AB5D-C50EC79C7381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A0F13D-C533-45FD-AB5D-C50EC79C7381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
