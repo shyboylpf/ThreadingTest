@@ -26,6 +26,12 @@ namespace ThreadTest23
             //A thread is deemed blocked when itsexecution is paused for some reason, such as when Sleeping or waiting for another to end via Join or EndInvoke.A blocked thread immediately yields its processor time slice, and from then on consumes no processor time until its blocking condition is satisfied.You can test for a thread being blocked via its ThreadState property:
             bool blocked = (Thread.CurrentThread.ThreadState & ThreadState.WaitSleepJoin) != 0;
             Console.WriteLine(blocked);
+            ///Unblocking happens in one of four ways (the computer's power button doesn't count!):
+
+            //by the blocking condition being satisfied
+            //by the operation timing out (if a timeout is specified)
+            //by being interrupted via Thread.Interrupt
+            //by being aborted via Thread.Abort
         }
     }
 }
