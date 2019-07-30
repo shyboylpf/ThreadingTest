@@ -24,5 +24,12 @@ namespace ThreadTest24
             //Although inelegant, this is (in general) far more efficient than outright spinning.Problems can arise, though, due to concurrency issues on the proceed flag. Proper use of locking and signaling avoids this.
         }
 
+
+        ///The following code strips a ThreadState to one of the four most useful values: Unstarted, Running, WaitSleepJoin, and Stopped:
+        public static ThreadState SimpleThreadState(ThreadState ts)
+        {
+            return ts & (ThreadState.Unstarted | ThreadState.WaitSleepJoin | ThreadState.Stopped);
+        }
+
     }
 }
