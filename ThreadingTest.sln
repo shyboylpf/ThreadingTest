@@ -53,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest23", "ThreadTest2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest24", "ThreadTest24\ThreadTest24.csproj", "{D4C1B0F4-36C8-4DD7-94AB-B529A5E121C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest25", "ThreadTest25\ThreadTest25.csproj", "{6082595E-62CB-40CD-823C-4EDCE4FE430B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "postGreSqlTest", "postGreSqlTest\postGreSqlTest.csproj", "{0B7D224E-027B-4ED5-BBFA-3968D275645B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +163,14 @@ Global
 		{D4C1B0F4-36C8-4DD7-94AB-B529A5E121C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C1B0F4-36C8-4DD7-94AB-B529A5E121C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4C1B0F4-36C8-4DD7-94AB-B529A5E121C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6082595E-62CB-40CD-823C-4EDCE4FE430B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6082595E-62CB-40CD-823C-4EDCE4FE430B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6082595E-62CB-40CD-823C-4EDCE4FE430B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6082595E-62CB-40CD-823C-4EDCE4FE430B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B7D224E-027B-4ED5-BBFA-3968D275645B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7D224E-027B-4ED5-BBFA-3968D275645B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7D224E-027B-4ED5-BBFA-3968D275645B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7D224E-027B-4ED5-BBFA-3968D275645B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
