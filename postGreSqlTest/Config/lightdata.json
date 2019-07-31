@@ -1,0 +1,11 @@
+﻿{
+  "lightData": {
+    "connections": [
+      {
+        "name": "postgresql",
+        "connectionString": "Data Source=192.168.138.128;User ID=postgres;Password=11;Initial Catalog=tutorial;",
+        "providerName": "Light.Data.Postgre.PostgreProvider, Light.Data.Postgre"
+      }
+    ]
+  }
+}
