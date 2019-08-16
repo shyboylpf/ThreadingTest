@@ -64,6 +64,7 @@ namespace ThreadTest25
 
         /// <summary>
         /// 有时候会在Monitor.Exit之前发生异常 , 这样 , 这个锁就永远都不能释放了, 所以CLR4.0 增加了Moniter.Enter的如下重写
+        /// lockTaken is false after this method if (and only if) the Enter method throws an exception and the lock was not taken.
         /// </summary>
         static void GoSafeLockTaken()
         {
