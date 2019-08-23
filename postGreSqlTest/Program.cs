@@ -12,11 +12,20 @@ namespace postGreSqlTest
         static void Main(string[] args)
         {
             DataContextConfiguration.SetConfigFilePath("Config/lightdata.json");
-            var context = new DataContext();
+            DataContext context = new DataContext("postgresql");
             //var item = context.Query<mattressdatacollectlist>().Where(x => x.collecttype == 1).First();
-            var sql = "SELECT * FROM mattressdatacollectlist;";
-            var executor = context.CreateSqlStringExecutor(sql);
-            var ret = executor.ExecuteNonQuery();
+            //var sql = "SELECT * FROM mattressdatacollectlist;";
+            //var executor = context.CreateSqlStringExecutor(sql);
+            //var ret = executor.ExecuteNonQuery();
+            var item = context.Query<mattressdatacollectlist>().Where(x => x.collecttype == 1).First();
+            Console.WriteLine(item.collecttype);
+        }
+    }
+    public class MyDataContext : DataContext
+    {
+        public MyDataContext() : base("postgresql")
+        {
+
         }
     }
 }
