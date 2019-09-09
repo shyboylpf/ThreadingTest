@@ -55,5 +55,5 @@ namespace ThreadTest31
         }
     }
 
-    class User { }
+    internal class User { }
 }
