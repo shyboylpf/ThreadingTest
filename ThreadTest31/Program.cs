@@ -12,17 +12,33 @@ namespace ThreadTest31
         static List<string> _list = new List<string>();
         static void Main(string[] args)
         {
-            new Thread(AddItem).Start();
-            new Thread(AddItem).Start();
-            new Thread(AddItem).Start();
+            var thread1 = new Thread(AddItem);
+            thread1.Name = "thread1";
+            thread1.Start();
+
+            var thread2 = new Thread(AddItem);
+            thread2.Name = "thread2";
+            thread2.Start();
+            //new Thread(AddItem).Start();
+            //new Thread(AddItem).Start();
+            //new Thread(AddItem).Start();
         }
 
         private static void AddItem()
         {
-            lock (_list) _list.Add("Item " + _list.Count);
+            lock (_list)
+            {
+                _list.Add("Item " + _list.Count);
+            }
             string[] items;
-            lock (_list) items = _list.ToArray();
-            foreach (string s in items) Console.WriteLine(s);
+            lock (_list)
+            {
+                items = _list.ToArray();
+            }
+            foreach (string s in items)
+            {
+                Console.WriteLine($"name: {Thread.CurrentThread.Name} , {s}");
+            }
         }
     }
 
