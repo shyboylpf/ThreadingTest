@@ -57,6 +57,7 @@ namespace ThreadTest41
         {
             while (true)
             {
+                Console.WriteLine(_rw.CurrentReadCount + " concurrent readers");
                 int newNumber = GetRandNum(100);
                 _rw.EnterWriteLock();
                 _items.Add(newNumber);
