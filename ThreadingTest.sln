@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest40", "ThreadTest4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest41", "ThreadTest41\ThreadTest41.csproj", "{315CCE41-35F9-4C2A-96AE-463F47B2DE83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest42", "ThreadTest42\ThreadTest42.csproj", "{73FDF426-A7D5-44B8-B7ED-467753164B28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,10 @@ Global
 		{315CCE41-35F9-4C2A-96AE-463F47B2DE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{315CCE41-35F9-4C2A-96AE-463F47B2DE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{315CCE41-35F9-4C2A-96AE-463F47B2DE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73FDF426-A7D5-44B8-B7ED-467753164B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FDF426-A7D5-44B8-B7ED-467753164B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FDF426-A7D5-44B8-B7ED-467753164B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FDF426-A7D5-44B8-B7ED-467753164B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
