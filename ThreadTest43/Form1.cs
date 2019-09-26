@@ -18,12 +18,17 @@ namespace ThreadTest43
         {
             InitializeComponent();
             new Thread(Work).Start();
+            Task.Factory.StartNew(()=> { txtMessage.Text = "first answer."; });
+            Task.Run(()=> {
+                Thread.Sleep(1000);
+                txtMessage.Text = "second answer.";
+            });
         }
 
         private void Work()
         {
             Thread.Sleep(5000);    // Simulate time-consuming task
-            UpdateMessage("The answer.");
+            UpdateMessage("third answer.");
         }
 
         private void UpdateMessage(string v)
