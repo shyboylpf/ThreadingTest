@@ -109,13 +109,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest44", "ThreadTest4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest45", "ThreadTest45\ThreadTest45.csproj", "{53896DFC-6852-49C0-BE82-B7F94EDF0E6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{ED288196-6880-40F3-B055-EFAB4945656B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{ED288196-6880-40F3-B055-EFAB4945656B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest46", "ThreadTest46\ThreadTest46.csproj", "{5937AC64-BCAA-4536-A23A-94BEF8376738}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest47", "ThreadTest47\ThreadTest47.csproj", "{D93F6245-4B83-41DA-AE8C-59BC3BA493A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest48", "ThreadTest48\ThreadTest48.csproj", "{17648543-0430-45BD-B4C7-D7731A649E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest49", "ThreadTest49\ThreadTest49.csproj", "{E4E272AE-2471-44C8-9AF7-B32CDA289990}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -351,6 +353,10 @@ Global
 		{17648543-0430-45BD-B4C7-D7731A649E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17648543-0430-45BD-B4C7-D7731A649E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17648543-0430-45BD-B4C7-D7731A649E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E272AE-2471-44C8-9AF7-B32CDA289990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E272AE-2471-44C8-9AF7-B32CDA289990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E272AE-2471-44C8-9AF7-B32CDA289990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E272AE-2471-44C8-9AF7-B32CDA289990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
