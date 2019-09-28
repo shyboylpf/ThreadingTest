@@ -23,6 +23,7 @@ namespace TreadTest51
             ///conflict with someone else’s! If the name is already in use on the computer, you get a reference to the same
             ///underlying EventWaitHandle; otherwise, the operating system creates a new one. Here’s an example:
             EventWaitHandle wh = new EventWaitHandle(false,EventResetMode.AutoReset, "MyCompany.MyApp.SomeName");
+            ///If two applications each ran this code, they would be able to signal each other: the wait handle would work across all threads in both processes.
         }
     }
 }
