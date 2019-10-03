@@ -13,6 +13,9 @@ namespace ThreadTest52
     class Program
     {
         static ManualResetEvent _starter = new ManualResetEvent(false);
+
+        static WaitHandle _wh1 = new AutoResetEvent(false);
+        static WaitHandle _wh2 = new AutoResetEvent(false);
         static void Main(string[] args)
         {
             Console.WriteLine("ThreadPool waiting a set.");
@@ -28,6 +31,13 @@ namespace ThreadTest52
                 //Thread.Sleep(1000);
             }
             _starter.Set();
+            ///SignalAndWait calls Set on one WaitHandle, and then calls WaitOne on another WaitHandle.
+            ///After signaling the first handle, it will jump to the head of the queue in waiting on the second handle; 
+            ///this helps it succeed (although the operation is not truly atomic). You can think of this method as “swapping” 
+            ///one signal for another, and use it on a pair of EventWaitHandles to set up two threads to rendezvous or “meet” at the 
+            ///same point in time. Either AutoResetEvent or ManualResetEvent will do the trick. The first thread executes the following:
+            WaitHandle.SignalAndWait(_wh1, _wh2);
+            WaitHandle.SignalAndWait(_wh2, _wh1);
             Console.ReadLine();
 
         }
