@@ -8,7 +8,7 @@ using System.Runtime.Remoting.Contexts;
 
 namespace ThreadTest56
 {
-    [Synchronization]
+    [Synchronization(true)]
     public class Deadlock : ContextBoundObject
     {
         public Deadlock Other;
