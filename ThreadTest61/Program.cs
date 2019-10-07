@@ -22,9 +22,14 @@ namespace ThreadTest61
                 {
                     Console.Write("Forcibly ");
                 }
+                //catch (ThreadAbortException)
+                //{
+                //    Console.Write("Abort ");
+                //}
                 Console.WriteLine("Woken!");
             });
             t.Start();
+            //t.Abort();
             t.Interrupt();
         }
         // 除非未处理ThreadInterruptedException，否则中断线程不会导致线程结束。
