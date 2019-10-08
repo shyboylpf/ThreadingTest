@@ -11,6 +11,7 @@ namespace 除法测试
         static void Main(string[] args)
         {
             Console.WriteLine(5304/200);
+            Console.WriteLine(5304 / 200);
         }
     }
 }
