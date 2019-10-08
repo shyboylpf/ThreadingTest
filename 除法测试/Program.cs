@@ -16,7 +16,6 @@ namespace 除法测试
             Console.WriteLine(5304 / 200);
             Console.WriteLine(5304 / 200); 
             Console.WriteLine(5304 / 200);
-            Console.WriteLine(5304 / 200);
         }
     }
 }
