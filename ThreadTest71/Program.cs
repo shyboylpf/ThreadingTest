@@ -51,6 +51,7 @@ namespace ThreadTest71
             log("test: awit 之后");
         }
 
+        // 返回Task的async方法, 一个标准的带返回值的异步task任务方法
         private static async Task<int> doo()
         {
             // async中使用await就是异步中以同步方式执行Task任务的方法, task任务一个接一个执行.
