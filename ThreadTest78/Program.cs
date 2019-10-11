@@ -18,7 +18,7 @@ namespace ThreadTest78
                 bool toggle = false;
                 while (!complete)
                 {
-                    //Thread.MemoryBarrier();
+                    Thread.MemoryBarrier();
                     toggle = !toggle;
                 }
             });
