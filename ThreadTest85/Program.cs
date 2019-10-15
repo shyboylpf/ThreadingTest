@@ -28,6 +28,7 @@ namespace ThreadTest85
         {
             Console.WriteLine($"start from timer.{Thread.CurrentThread.ManagedThreadId}");
             Thread.Sleep(2000);
+            throw (new Exception());
             Console.WriteLine($"end from timer.{Thread.CurrentThread.ManagedThreadId}");
         }
     }
