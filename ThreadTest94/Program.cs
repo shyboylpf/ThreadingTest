@@ -7,6 +7,10 @@ using System.Threading;
 
 namespace ThreadTest94
 {
+    /// <summary>
+    /// 升级锁与读锁差不多 , 但是系统中可以有多个读锁, 却同时只能取出一个升级锁, 通过序列化升级为写锁来避免死锁的发生
+    /// 就像SQL server中升级锁那样.
+    /// </summary>
     internal class Program
     {
         private static ReaderWriterLockSlim _rw = new ReaderWriterLockSlim();
