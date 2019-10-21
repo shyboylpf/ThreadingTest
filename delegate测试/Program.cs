@@ -15,19 +15,27 @@ namespace delegate测试
         {
             Brodcast += func1;
             Brodcast += func2;
-            Brodcast(new object(), new EventArgs());
+            Brodcast(new Program(), EventArgs.Empty);
+            for (int i = 0; i < 5; i++)
+                Brodcast?.Invoke(new object(), EventArgs.Empty);
+
+            Console.WriteLine("event invoke");
+            Foo foo = new Foo();
+            Foo1 foo1 = new Foo1();
+            Foo2 foo2 = new Foo2();
+            foo.BrodcastEvent += foo1.MessageBrodcast;
+            foo.BrodcastEvent += foo2.MailBrodcast;
+            foo.StartBrodcast();
         }
 
         private static void func2(object sender, EventArgs e)
         {
-            Console.WriteLine
-                ("func2");
+            Console.WriteLine("func2");
         }
 
         private static void func1(object sender, EventArgs e)
         {
-            Console.WriteLine
-                ("func1");
+            Console.WriteLine("func1");
         }
     }
 
@@ -38,6 +46,7 @@ namespace delegate测试
         public void StartBrodcast()
         {
             BrodcastEvent(this, new EventArgs());
+            //BrodcastEvent.BeginInvoke(this, new EventArgs(), new AsyncCallback());
         }
     }
 
@@ -47,7 +56,7 @@ namespace delegate测试
         {
             try
             {
-                Thread.Sleep(2000);
+                Thread.Sleep(5000);
                 Console.WriteLine("1. 短信报警成功");
                 throw new Exception();
             }
@@ -61,7 +70,7 @@ namespace delegate测试
     {
         public void MailBrodcast(object sender, EventArgs e)
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(5000);
             Console.WriteLine("2. 短信报警成功");
         }
     }
