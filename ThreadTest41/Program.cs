@@ -7,19 +7,20 @@ using System.Threading.Tasks;
 
 namespace ThreadTest41
 {
-    class Program
+    internal class Program
     {
         /// The following program demonstrates ReaderWriterLockSlim. Three threads continually enumerate a list, while two further threads append a random number to the list every second. A read lock protects the list readers, and a write lock protects the list writers:
-        static ReaderWriterLockSlim _rw = new ReaderWriterLockSlim();
-        static List<int> _items = new List<int>();
-        static Random _rand = new Random();
+        private static ReaderWriterLockSlim _rw = new ReaderWriterLockSlim();
+
+        private static List<int> _items = new List<int>();
+        private static Random _rand = new Random();
 
         /// <summary>
         /// Reader/Writer Locks.
-        /// ReaderWriterLockSlim 
+        /// ReaderWriterLockSlim
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             new Thread(Read).Start("A");
             new Thread(Read).Start("B");
@@ -27,7 +28,6 @@ namespace ThreadTest41
 
             new Thread(Write).Start("A");
             new Thread(Write).Start("B");
-
         }
 
         private static void Read(object threadID)
@@ -43,7 +43,7 @@ namespace ThreadTest41
                 try
                 {
                     Console.WriteLine("Thread " + threadID + " Read " + _items.Last());
-                    Thread.Sleep(10);
+                    Thread.Sleep(1000);
                 }
                 catch
                 {
@@ -63,7 +63,7 @@ namespace ThreadTest41
                 _items.Add(newNumber);
                 _rw.ExitWriteLock();
                 //Console.WriteLine("Thread " + threadID + " added " + newNumber);
-                Thread.Sleep(100);
+                Thread.Sleep(5000);
             }
         }
 
@@ -74,7 +74,5 @@ namespace ThreadTest41
                 return _rand.Next(max);
             }
         }
-
-        
     }
 }
