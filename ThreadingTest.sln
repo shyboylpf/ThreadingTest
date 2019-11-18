@@ -223,6 +223,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "petapocoTest", "petapocoTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest97", "ThreadTest97\ThreadTest97.csproj", "{8534CBCB-7A79-45E9-90FF-C0CE7AC4CC89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest98", "ThreadTest98\ThreadTest98.csproj", "{87EE04EF-0EA9-4AE7-884F-3E307CEA3D5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -669,6 +671,10 @@ Global
 		{8534CBCB-7A79-45E9-90FF-C0CE7AC4CC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8534CBCB-7A79-45E9-90FF-C0CE7AC4CC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8534CBCB-7A79-45E9-90FF-C0CE7AC4CC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87EE04EF-0EA9-4AE7-884F-3E307CEA3D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87EE04EF-0EA9-4AE7-884F-3E307CEA3D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87EE04EF-0EA9-4AE7-884F-3E307CEA3D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87EE04EF-0EA9-4AE7-884F-3E307CEA3D5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
