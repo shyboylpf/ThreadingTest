@@ -45,7 +45,7 @@ namespace ThreadTest113
 
             foreach (var item in misspellings)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"{item.Item1}: {item.Item2}");
             }
         }
     }
