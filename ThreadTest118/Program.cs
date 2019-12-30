@@ -30,6 +30,9 @@ namespace ThreadTest118
             // 创建Task  , 然后调用
             var task2 = new Task(() => Console.WriteLine("Create a Task."));
             task2.Start();
+
+            // 对当前Task进行同步调用
+            task2.RunSynchronously();
         }
     }
 }
