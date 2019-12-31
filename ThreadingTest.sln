@@ -277,6 +277,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest123", "ThreadTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest124", "ThreadTest124\ThreadTest124.csproj", "{63FFC84E-EEB4-4B1C-B0B8-46B0FAB11564}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTest125", "ThreadTest125\ThreadTest125.csproj", "{B25D975D-948A-4387-9DCB-68A2BF1A44D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -831,6 +833,10 @@ Global
 		{63FFC84E-EEB4-4B1C-B0B8-46B0FAB11564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63FFC84E-EEB4-4B1C-B0B8-46B0FAB11564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63FFC84E-EEB4-4B1C-B0B8-46B0FAB11564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25D975D-948A-4387-9DCB-68A2BF1A44D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25D975D-948A-4387-9DCB-68A2BF1A44D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25D975D-948A-4387-9DCB-68A2BF1A44D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25D975D-948A-4387-9DCB-68A2BF1A44D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
