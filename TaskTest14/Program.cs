@@ -12,6 +12,8 @@ namespace TaskTest14
         {
             // Task.FromResult 方法使用的情景为，数据可能已存在，且只需要提升到Task<TResult>的 任务返回方法返回：
             // 数据已经有了，只是用Task来包装一下
+            Task.Run(async () => Console.WriteLine(await new Program().GetValueAsync("")));
+            Console.ReadKey();
         }
 
         public Task<int> GetValueAsync(string key)
@@ -23,7 +25,8 @@ namespace TaskTest14
 
         private bool TryGetCacheValue(out int cacheValue)
         {
-            throw new NotImplementedException();
+            cacheValue = 1;
+            return true;
         }
 
         private Task<int> GetValueAsyncInternal()
