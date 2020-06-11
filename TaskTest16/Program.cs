@@ -39,6 +39,48 @@ namespace TaskTest16
             //Console.ReadKey();
         }
 
+        /// <summary>
+        /// 上面的代码没有显示处理可能发生的异常，而是通过对WhenAll生成的任务执行await传播异常，若要处理该异常，可使用下面的代码
+        /// </summary>
+        /// <param name="addrs"></param>
+        /// <returns></returns>
+        private static async Task SendMailsAsync(string[] addrs)
+        {
+            IEnumerable<Task> asyncOps = from addr in addrs select SendMailAsync(addr.ToString());
+            try
+            {
+                await Task.WhenAll(asyncOps);
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc.InnerException.Message);
+            }
+        }
+
+        /// <summary>
+        /// 在这种情况下，如果任意异步操作失败，所有异常都会合并到AggregateException异常中，
+        /// 此异常存储在whenAll方法返回的Task中，但是，仅通过await关键字传播其中的一个异常
+        /// 如果想要检查所有异常，可以使用以下代码
+        /// </summary>
+        /// <param name="addrs"></param>
+        /// <returns></returns>
+        private static async Task SendMainsAsync2(string[] addrs)
+        {
+            Task[] asyncOps = (from addr in addrs select SendMailAsync(addr)).ToArray();
+            try
+            {
+                await Task.WhenAll(asyncOps);
+            }
+            catch (Exception exc)
+            {
+                foreach (Task faulted in asyncOps.Where(t => t.IsFaulted))
+                {
+                    // .. work with faulted and faulted.Exception.
+                    //处理失败任务
+                }
+            }
+        }
+
         private static Task SendMailAsync(string addr)
         {
             return Task.Run(() => Console.WriteLine("发送 邮件给：" + addr));
