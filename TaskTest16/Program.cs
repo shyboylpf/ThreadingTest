@@ -19,10 +19,11 @@ namespace TaskTest16
              * Let's say you want to send email messages to several customers. You can overlap sending the messages so you're not
              * waiting for one message to complete before sending the next. You can also find out when the send operations have
              * completed and whether any errors have occurred:
+             * WhenAll方法 可用于异步等待多个表示为任务的异步操作。
              */
 
             // 使用Enumerable来生成int[]
-            IEnumerable<int> numbers = Enumerable.Range(3, 100000 - 3);
+            IEnumerable<int> numbers = Enumerable.Range(3, 1000 - 3);
 
             var parallelQuery =
               from n in numbers.AsParallel()
@@ -40,7 +41,7 @@ namespace TaskTest16
 
         private static Task SendMailAsync(string addr)
         {
-            return Task.Run(() => Console.WriteLine(addr));
+            return Task.Run(() => Console.WriteLine("发送 邮件给：" + addr));
         }
     }
 }
