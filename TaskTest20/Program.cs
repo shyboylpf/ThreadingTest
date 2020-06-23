@@ -67,9 +67,7 @@ namespace TaskTest20
 
         private static Task<Bitmap> GetBitmapAsync(Uri uri)
         {
-            return Task<Bitmap>.Run(delegate ()
-            {
-            })
+            throw null;
         }
     }
 }
